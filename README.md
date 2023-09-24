@@ -11,7 +11,7 @@ This is a simple configuration for a prefect environment with
 
 To run this, first set your API key and authenticate, then create the work-pool
 ```
-prefect work-pool create 'default-process-1' --type process
+prefect work-pool create 'default-process-1' --type prefect-agent
 ```
 
 then
