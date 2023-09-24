@@ -8,7 +8,7 @@ This is a simple configuration for a prefect environment with
 * a custom worker pool
 * scheduling
 
-NOTE: Before running, you need to change the value of the `prefect.yaml` file pointing to your working directory. It needs to be _your_ working dir, and the full path to it. If you're currently in the root of this repo (where this readme is), you can run this
+NOTE: Before running, you need to change the [directory value](https://github.com/Ben-Epstein/prefect-quickstart/blob/main/prefect.yaml#L18) of the `prefect.yaml` file pointing to your working directory. It needs to be _your_ working dir, and the full path to it. If you're currently in the root of this repo (where this readme is), you can run this
 ```shell
 sed -i .bak "s|FULL_PATH_TO_DIR|$PWD|g" prefect.yaml
 ```
