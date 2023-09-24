@@ -15,7 +15,7 @@ push:
 # pull section allows you to provide instructions for cloning this project in remote locations
 pull:
 - prefect.deployments.steps.set_working_directory:
-    directory: /Users/benepstein/Documents/testing/prefect
+    directory:  FULL_PATH_TO_DIR # TODO: Modify me to the full path of your local dir
 
 # the deployments section allows you to provide configuration for deploying flows
 deployments:
@@ -45,9 +45,9 @@ deployments:
     name: default-process-1
     work_queue_name:
     job_variables: {}
-  schedule:
+ 
 - name: deployment-3
-  entrypoint: flows/flows.py:hello_world
+  entrypoint: ./flows/flows.py:hello_world
   work_pool:
     type: process
     name: default-process-1
