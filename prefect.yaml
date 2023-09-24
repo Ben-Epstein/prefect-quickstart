@@ -15,7 +15,7 @@ push:
 # pull section allows you to provide instructions for cloning this project in remote locations
 pull:
 - prefect.deployments.steps.set_working_directory:
-    directory:  FULL_PATH_TO_DIR # TODO: Modify me to the full path of your local dir
+    directory: FULL_PATH_TO_DIR # TODO: Modify me to the full path of your local dir
 
 # the deployments section allows you to provide configuration for deploying flows
 deployments:
