@@ -9,7 +9,12 @@ This is a simple configuration for a prefect environment with
 * scheduling
 
 
-To run this, first set your API key and authenticate, then run
+To run this, first set your API key and authenticate, then create the work-pool
+```
+prefect work-pool create 'default-process-1' --type process
+```
+
+then
 ```
 prefect deploy --all
 ```
