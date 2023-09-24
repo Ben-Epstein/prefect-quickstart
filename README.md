@@ -8,7 +8,11 @@ This is a simple configuration for a prefect environment with
 * a custom worker pool
 * scheduling
 
-NOTE: Before running, you need to change the value of the `prefect.yaml` file pointing to your working directory. It needs to be _your_ working dir, and the full path to it
+NOTE: Before running, you need to change the value of the `prefect.yaml` file pointing to your working directory. It needs to be _your_ working dir, and the full path to it. If you're currently in the root of this repo (where this readme is), you can run this
+```shell
+sed -i .bak "s|FULL_PATH_TO_DIR|$PWD|g" prefect.yaml
+```
+and it will replace it with the current working dir.
 
 To run this, first set your API key and authenticate, then create the work-pool
 ```
