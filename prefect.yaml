@@ -35,29 +35,29 @@ deployments:
     interval: 30.0
     anchor_date: '2023-09-24T20:10:59.381600+00:00'
     timezone: UTC
-- name: deployment-2
-  entrypoint: ./flows/flows.py:run_my_flow
-  version:
-  tags: []
-  description:
-  parameters: {}
-  work_pool:
-    name: default-process-1
-    work_queue_name:
-    job_variables: {}
+# - name: deployment-2
+#   entrypoint: ./flows/flows.py:run_my_flow
+#   version:
+#   tags: []
+#   description:
+#   parameters: {}
+#   work_pool:
+#     name: default-process-1
+#     work_queue_name:
+#     job_variables: {}
  
-- name: deployment-3
-  entrypoint: ./flows/flows.py:hello_world
-  work_pool:
-    type: process
-    name: default-process-1
-    work_queue_name:
-    job_variables: {}
-  version:
-  tags: []
-  description:
-  parameters: {}
-  schedule:
-    interval: 45.0
-    anchor_date: '2023-09-24T19:50:04.334942+00:00'
-    timezone: UTC
+# - name: deployment-3
+#   entrypoint: ./flows/flows.py:hello_world
+#   work_pool:
+#     type: process
+#     name: default-process-1
+#     work_queue_name:
+#     job_variables: {}
+#   version:
+#   tags: []
+#   description:
+#   parameters: {}
+#   schedule:
+#     interval: 45.0
+#     anchor_date: '2023-09-24T19:50:04.334942+00:00'
+#     timezone: UTC
