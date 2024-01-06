@@ -32,9 +32,11 @@ prefect agent start --pool "default-process-1"
 
 ## Notes about work-pools, workers, and agents
 
-There are 2 "local running" work-pools: `process` and `prefect-agent`. As far as I can tell, if you are executing them on a machine, they behave the same. 
+~There are 2 "local running" work-pools: `process` and `prefect-agent`. As far as I can tell, if you are executing them on a machine, they behave the same.~
 
-The `worker` and `agent` seem to also be the same in this regard, with the one exception that an `agent` can connect to both `process` and `prefect-agent` worker-pools, whereas a `worker` can only connect to `process` worker-pools.
+~The `worker` and `agent` seem to also be the same in this regard, with the one exception that an `agent` can connect to both `process` and `prefect-agent` worker-pools, whereas a `worker` can only connect to `process` worker-pools.~
+
+Prefect agents are outdated, and the way to run jobs now is with [work-pools and workers](https://docs.prefect.io/latest/concepts/work-pools/)
 
 
 ```shell
